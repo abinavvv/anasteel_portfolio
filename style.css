@@ -1,0 +1,231 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#container{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color: white;
+
+}
+
+#logo{
+    width: 120px;
+}
+
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+    margin-left: 100px;
+}
+.listitem{
+    display: inline-block;
+    margin: 10px 20px;
+}
+.links{
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+}
+.links:hover{
+    color: red;
+}
+.title{
+    margin-left: 8%;
+    margin-top: 13%;
+}
+.title_h1{
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+#lastname{
+    color: orange;
+}
+#download{
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding:10px 20px;
+    margin: 30px 0px;
+    display: inline-block;              /* it respects both top and bottom margins and paddings */
+    border-radius: 10px;
+}
+.images{
+    width: 45%; 
+    height: 85%;
+    position: absolute;
+    bottom: 0px;
+    right: 30px;
+    
+}
+.imageGroup{
+    position: absolute;
+    height: 100%;
+    bottom: 0px; /*intial values*/
+    left: 50%;
+    transform: translate(-50%);
+    transition: bottom 1s, left 2s;
+
+}
+.images:hover #shape{
+    bottom: 60px;
+
+}
+.images:hover #girl{
+    left: 40%;  
+}
+#about{
+    margin: 13% 8% 0% 8%;
+}
+.heading{
+    text-align: center;
+}
+.heading h2{
+   
+    font-size: 30px;
+}
+.heading span{
+    color: green;
+    
+}
+.about_content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 2rem;
+    margin-top: 2rem;
+}
+.about_image img{
+    width: 80%;
+    border-radius: 10px;
+}
+.about_para p{
+    text-align: justify;
+    font-size: 18px;
+    font-weight: 500;
+}
+.information{
+    margin-top: 1rem;
+}
+.info_bax{
+    margin-bottom: 1rem;
+    align-items: center;
+    font-size: 18px;
+}
+.info_bax span{
+    margin-left: 1rem;
+}
+#skill{
+    margin: 8% 8% 00px 8%;
+}
+.skill_container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 2rem;
+    margin-top: 2rem;
+}
+.skill_img{
+    width: 50%;
+    padding-left: 4rem;
+    object-position: center;
+}
+.progress-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    padding: 1rem 0px;
+    position: relative;
+}
+.progress-bar span{
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+.base-bar{
+    width: 100%;
+    height: 0.5rem;
+    background-color: black;
+    position: absolute;
+    bottom: 0px;
+    border-radius: 0.5rem;
+}
+.html-bar{
+    background-color: orange;
+    width: 95%;
+} 
+.css-bar{
+    background-color: orange;
+    width: 88%;
+}
+.js-bar{
+    background-color: orange;
+    width: 89%;
+}
+.react-bar{
+    background-color: orange;
+    width: 85%;
+}
+.icon-set{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+.icon, .up-arrow{
+    width: 50px;
+    height: 50px;
+    /* border: 1px solid black; */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 15px;
+}
+.icon:hover{
+    /* background-color: orange; */
+    background-image: linear-gradient(to bottom right, yellow, red);
+
+}
+.icon i{
+    color: black;
+    font-size: 2rem;
+}
+.icon:hover i{
+    color: white;
+    animation: shake 0.75s;
+}
+@keyframes shake {
+    10%{
+        transform: rotate(15deg);
+    }
+    20%{
+        transform: rotate(-15deg);
+    }
+    30%{
+        transform: rotate(15deg);
+    }
+    40%{
+        transform: rotate(-15deg);
+    }
+}
+#footer{
+    text-align: center;
+    font-size: 15px;
+    font-weight: bolder;
+    margin-top: 2rem;
+}
+.up-arrow{
+    font-size: 1.75rem;
+    background-image: linear-gradient(to bottom right, yellow, red);
+    margin: 10px 20px 30px 0px;
+    float: right;
+}
+.up-arrow:hover i{
+    color: white;
+}
+html{
+    scroll-behavior: smooth;
+}

@@ -1,0 +1,8 @@
+display grid
+column gap
+
+
+
+grid template column 
+1frame=225px
+1rem=16px+
